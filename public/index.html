@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacktiv8 Gemini AI Chatbot Submission</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="branding">
+          <div class="logo-circle">H8</div>
+          <h1>Hacktiv8 Gemini AI Chatbot Submission</h1>
+        </div>
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="pill-btn"
+            type="button"
+            aria-label="Toggle theme"
+            title="Toggle dark / light"
+          >
+            🌙
+          </button>
+          <div class="model-badge" id="model-badge" title="Current model">
+            gemini-2.5-flash
+          </div>
+        </div>
+      </header>
+      <main class="chat-wrapper">
+        <div
+          id="chat-box"
+          class="chat-box"
+          aria-live="polite"
+          aria-label="Chat conversation"
+        ></div>
+      </main>
+      <form id="chat-form" class="chat-input" autocomplete="off">
+        <textarea
+          id="user-input"
+          rows="1"
+          placeholder="Type your message..."
+          required
+        ></textarea>
+        <div class="controls">
+          <button type="submit" id="send-btn" class="primary">Send ▷</button>
+        </div>
+      </form>
+      <footer class="app-footer">
+        Built with Gemini • Hacktiv8 Submission
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
